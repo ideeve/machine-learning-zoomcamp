@@ -16,7 +16,7 @@ data_url = "https://raw.githubusercontent.com/alexeygrigorev/datasets/master/hou
 
 def load_and_prepare_data(data_url):
     df = pd.read_csv(data_url)
-    df = df[df['ocean_proximity'].isin(['<1H OCEAN', 'INLAND'])
+    df = df[df['ocean_proximity'].isin(['<1H OCEAN', 'INLAND'])]
     df = df.fillna(0)
     X = df.drop('median_house_value', axis=1)
     y = np.log1p(df['median_house_value'])
