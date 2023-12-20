@@ -63,24 +63,6 @@ model = LogisticRegression(solver='lbfgs')
 # for older versions, you need to specify it explicitly
 model.fit(X_train, y_train)
 
-# xgb_params = {
-#     'eta': 0.1, 
-#     'max_depth': 3,
-#     'min_child_weight': 1,
-
-#     'objective': 'binary:logistic',
-#     'eval_metric': 'auc',
-
-#     'nthread': 8,
-#     'seed': 1,
-#     'verbosity': 1,
-# }
-
-# features = list(dv.get_feature_names_out())
-# dtrain = xgb.DMatrix(X_train, label=y_train, feature_names=features)
-# dval = xgb.DMatrix(X_val, label=y_val, feature_names=features)
-
-# model = xgb.train(xgb_params, dtrain, num_boost_round=200)
 
 # Exporting the model
 logging.info("Exporting the model...")
