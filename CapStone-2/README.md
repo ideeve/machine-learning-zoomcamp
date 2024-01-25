@@ -115,7 +115,7 @@ docker build -t CapStone-2 .
 
 ### Run the image 
 ```bash
-docker run -it --rm -p 8080:8080 CapStone-1:latest
+docker run -it --rm -p 8080:8080 CapStone-2:latest
 ```
 
 ### Testing the model
