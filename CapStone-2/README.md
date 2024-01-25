@@ -110,7 +110,7 @@ Make sure you have Docker installed, then go to the CapStone-1 folder and run
 ### Create Docker image
 
 ```bash
-docker build -t CapStone-1 .
+docker build -t CapStone-2 .
 ```
 
 ### Run the image 
